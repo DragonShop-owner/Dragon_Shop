@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* ===== MODAL ONLY ===== */
 .modal{
     display:none;
     position:fixed;
@@ -75,7 +74,7 @@ img{
 
 <div class="container">
 
-<!-- 🔘 BUTTONS -->
+<!-- دکمه‌ها -->
 <div class="nav" style="text-align:center; margin:20px;">
     <button onclick="openModal('skins')">👕 اسکین‌ها</button>
     <button onclick="openModal('capes')">🧢 کیپ‌ها</button>
@@ -85,7 +84,7 @@ img{
 
 </div>
 
-<!-- 📦 MODAL -->
+<!-- مودال -->
 <div id="modal" class="modal">
     <div class="modal-content">
 
@@ -97,7 +96,7 @@ img{
 </div>
 
 <footer>
-© Dragon Shop 2026
+    🐉 Dragon Shop © 2026
 </footer>
 
 <script>
@@ -107,15 +106,19 @@ function openModal(type){
 
     if(type === "skins"){
         content = `
-        <h2>👕 اسکین‌ها</h2>
+        <h2>👕 اسکین دراگون</h2>
 
         <div class="card">
-            <h3>اسکین ویژه</h3>
+            <h3>اسکین دراگون</h3>
             <img src="skin1.png">
 
             <p style="color:#00ffcc;font-weight:bold;">
                 دانلود رایگان
             </p>
+
+            <a class="btn" href="skin1.png" download>
+                دانلود اسکین
+            </a>
         </div>
         `;
     }
@@ -140,11 +143,16 @@ function openModal(type){
         <h2>🎨 آرت‌ها</h2>
 
         <div class="card">
-            <h3>آرت ویژه</h3>
+            <h3>آرت پیکسل</h3>
             <img src="art1.png">
 
+            <p style="color:#00ffcc;font-weight:bold;">
+                برای خرید آرت پیکسل دلخواه به این آیدی در روبیکا مراجعه کنید:
+                Parham_capeer@
+            </p>
+
             <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-                خرید از روبیکا
+                ورود به روبیکا
             </a>
         </div>
         `;
