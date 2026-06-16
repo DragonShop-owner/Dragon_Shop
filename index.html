@@ -5,111 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dragon Shop</title>
 
-<style>
-body{
-    margin:0;
-    font-family:tahoma;
-    background: radial-gradient(circle at top,#0b0f2a,#050816);
-    color:white;
-}
-
-/* HEADER */
-header{
-    text-align:center;
-    padding:60px 20px;
-    background: linear-gradient(90deg,#00bfff,#0047ff);
-    box-shadow:0 0 40px #00bfff;
-}
-
-header h1{
-    margin:0;
-    font-size:50px;
-}
-
-/* NAV BUTTONS */
-.nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:10px;
-    margin:20px 0;
-}
-
-.nav button{
-    background:#00bfff;
-    border:none;
-    padding:10px 15px;
-    border-radius:10px;
-    color:white;
-    cursor:pointer;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.nav button:hover{
-    background:#008fcc;
-}
-
-/* CONTAINER */
-.container{
-    width:92%;
-    max-width:1100px;
-    margin:auto;
-}
-
-/* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-/* CARD */
-.card{
-    background:#0d1326;
-    border-radius:15px;
-    padding:20px;
-    border:1px solid rgba(0,191,255,0.3);
-    box-shadow:0 0 15px rgba(0,191,255,0.15);
-}
-
-/* IMAGE */
-img{
-    width:100%;
-    border-radius:12px;
-    margin-top:10px;
-}
-
-/* BUTTON */
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    background:#00bfff;
-    padding:10px 15px;
-    border-radius:10px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* SECTIONS */
-.section{
-    display:none;
-}
-
-.active{
-    display:block;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:20px;
-    opacity:0.7;
-    margin-top:30px;
-    background:#02040d;
-}
-</style>
+<!-- اتصال CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -119,32 +16,26 @@ footer{
     <p>فروشگاه حرفه‌ای ماینکرفت</p>
 </header>
 
-<!-- NAV -->
-<div class="nav">
-    <button onclick="show('capes')">🧢 کیپ‌ها</button>
-    <button onclick="show('packs')">📦 ریسورس پک</button>
-    <button onclick="show('skins')">👕 اسکین</button>
-    <button onclick="show('arts')">🎨 آرت</button>
-    <button onclick="show('support')">💬 پشتیبانی</button>
-</div>
-
 <div class="container">
 
-<!-- CAPES -->
-<div id="capes" class="section active">
-    <div class="grid">
-        <div class="card">
-            <h3>کیپ اختصاصی</h3>
-            <img src="cape1.png">
-            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-                خرید از روبیکا
-            </a>
-        </div>
+<!-- 🧢 کیپ -->
+<div class="section">
+    <h2>🧢 کیپ‌ها</h2>
+
+    <div class="card">
+        <h3>کیپ اختصاصی</h3>
+        <img src="cape1.png">
+
+        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+            خرید از روبیکا
+        </a>
     </div>
 </div>
 
-<!-- PACK -->
-<div id="packs" class="section">
+<!-- 📦 ریسورس پک -->
+<div class="section">
+    <h2>📦 ریسورس پک</h2>
+
     <div class="card">
         <h3>Reyan Faith Pack</h3>
 
@@ -154,39 +45,40 @@ footer{
     </div>
 </div>
 
-<!-- SKIN -->
-<div id="skins" class="section">
-    <div class="grid">
-        <div class="card">
-            <h3>اسکین ویژه</h3>
-            <img src="skin1.png">
+<!-- 👕 اسکین -->
+<div class="section">
+    <h2>👕 اسکین‌ها</h2>
 
-            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-                خرید از روبیکا
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- ARTS -->
-<div id="arts" class="section">
-    <div class="grid">
-        <div class="card">
-            <h3>آرت ویژه</h3>
-            <img src="art1.png">
-
-            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-                خرید از روبیکا
-            </a>
-        </div>
-    </div>
-</div>
-
-<!-- SUPPORT -->
-<div id="support" class="section">
     <div class="card">
-        <h2>💬 پشتیبانی</h2>
-        <p>برای خرید فقط در روبیکا پیام دهید:</p>
+        <h3>اسکین ویژه</h3>
+        <img src="skin1.png">
+
+        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+            خرید از روبیکا
+        </a>
+    </div>
+</div>
+
+<!-- 🎨 آرت -->
+<div class="section">
+    <h2>🎨 آرت‌ها</h2>
+
+    <div class="card">
+        <h3>آرت ویژه</h3>
+        <img src="art1.png">
+
+        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+            خرید از روبیکا
+        </a>
+    </div>
+</div>
+
+<!-- 💬 پشتیبانی -->
+<div class="section">
+    <div class="card">
+        <h2>💬 پشتیبانی و خرید</h2>
+
+        <p>برای خرید همه محصولات فقط در روبیکا پیام دهید:</p>
 
         <h2>Parham_capeer@</h2>
 
@@ -201,14 +93,6 @@ footer{
 <footer>
 © Dragon Shop 2026
 </footer>
-
-<script>
-function show(id){
-    let sections = document.querySelectorAll('.section');
-    sections.forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-}
-</script>
 
 </body>
 </html>
