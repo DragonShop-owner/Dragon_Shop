@@ -1,5 +1,92 @@
-<head>
-<style>
-body { background: black; }
-</style>
-</head>
+body{
+    margin:0;
+    font-family:tahoma;
+    background: radial-gradient(circle at top,#120000,#050816 60%,#000);
+    color:white;
+}
+
+/* HEADER DRAGON */
+header{
+    text-align:center;
+    padding:70px 20px;
+    background: linear-gradient(90deg,#ff3c00,#00bfff);
+    box-shadow:0 0 60px #ff3c00, 0 0 40px #00bfff;
+}
+
+header h1{
+    margin:0;
+    font-size:55px;
+    text-shadow:0 0 15px #ff3c00, 0 0 15px #00bfff;
+}
+
+/* CONTAINER */
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* SECTION */
+.section{
+    margin:40px 0;
+}
+
+/* TITLE */
+h2{
+    color:#ff3c00;
+    text-shadow:0 0 10px #ff3c00;
+}
+
+/* CARD */
+.card{
+    background: linear-gradient(145deg,#0d1326,#1a0f0f);
+    border-radius:15px;
+    padding:20px;
+    border:1px solid #ff3c00;
+    box-shadow:0 0 20px rgba(255,60,0,0.3);
+    margin-top:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 35px #ff3c00, 0 0 25px #00bfff;
+}
+
+/* IMAGE */
+img{
+    width:100%;
+    border-radius:12px;
+    margin-top:10px;
+    border:1px solid #00bfff;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:10px;
+    background: linear-gradient(90deg,#ff3c00,#00bfff);
+    padding:10px 15px;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 10px rgba(255,60,0,0.5);
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.07);
+    box-shadow:0 0 25px #ff3c00;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    margin-top:30px;
+    opacity:0.8;
+    background:#02040d;
+    border-top:1px solid #ff3c00;
+}
