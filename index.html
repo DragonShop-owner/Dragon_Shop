@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dragon Shop | Minecraft Store</title>
+<title>Dragon Shop | Store</title>
 
 <style>
 body{
@@ -25,25 +25,28 @@ header h1{
     font-size:55px;
 }
 
-.container{
+/* SECTION STYLE (خیلی مهم برای جدا شدن بخش‌ها) */
+.section{
+    margin:40px auto;
     width:92%;
     max-width:1100px;
-    margin:auto;
-    padding:20px;
 }
 
+/* TITLE */
 .title{
-    font-size:22px;
-    margin:25px 0 10px;
+    font-size:24px;
     color:#00bfff;
+    margin-bottom:15px;
 }
 
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:20px;
 }
 
+/* CARD */
 .card{
     background:#0d1326;
     border-radius:15px;
@@ -58,12 +61,14 @@ header h1{
     box-shadow:0 0 25px #00bfff;
 }
 
+/* IMAGE */
 img{
     width:100%;
     border-radius:12px;
     margin-top:10px;
 }
 
+/* BUTTON */
 .btn{
     display:inline-block;
     margin-top:10px;
@@ -81,6 +86,7 @@ img{
     transform:scale(1.05);
 }
 
+/* FOOTER */
 footer{
     text-align:center;
     padding:25px;
@@ -98,75 +104,85 @@ footer{
     <p>فروشگاه حرفه‌ای ماینکرفت</p>
 </header>
 
-<div class="container">
-
 <!-- 🧢 CAPE -->
-<div class="title">🧢 کیپ‌ها</div>
-<div class="grid">
-    <div class="card">
-        <h3>کیپ اختصاصی</h3>
-        <img src="cape1.png">
+<div class="section">
+    <div class="title">🧢 کیپ‌ها</div>
 
-        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-            خرید از روبیکا
-        </a>
-    </div>
-</div>
+    <div class="grid">
+        <div class="card">
+            <h3>کیپ اختصاصی</h3>
+            <img src="cape1.png">
 
-<!-- 👕 SKIN -->
-<div class="title">👕 اسکین‌ها</div>
-<div class="grid">
-    <div class="card">
-        <h3>اسکین ویژه</h3>
-        <img src="skin1.png">
-
-        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-            خرید از روبیکا
-        </a>
-    </div>
-</div>
-
-<!-- 🎨 ART -->
-<div class="title">🎨 آرت‌ها</div>
-<div class="grid">
-    <div class="card">
-        <h3>آرت ویژه</h3>
-        <img src="art1.png">
-
-        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-            خرید از روبیکا
-        </a>
+            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+                خرید از روبیکا
+            </a>
+        </div>
     </div>
 </div>
 
 <!-- 📦 PACK -->
-<div class="title">📦 ریسورس پک‌ها</div>
-<div class="grid">
-    <div class="card">
-        <h3>Reyan Faith Pack</h3>
+<div class="section">
+    <div class="title">📦 ریسورس پک</div>
 
-        <a class="btn" href="reyan-faith.zip" download>
-            دانلود ریسورس پک
-        </a>
+    <div class="grid">
+        <div class="card">
+            <h3>Reyan Faith Pack</h3>
+
+            <a class="btn" href="reyan-faith.zip" download>
+                دانلود ریسورس پک
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 👕 SKIN -->
+<div class="section">
+    <div class="title">👕 اسکین‌ها</div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>اسکین ویژه</h3>
+            <img src="skin1.png">
+
+            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+                خرید از روبیکا
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- 🎨 ART -->
+<div class="section">
+    <div class="title">🎨 آرت‌ها</div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>آرت ویژه</h3>
+            <img src="art1.png">
+
+            <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+                خرید از روبیکا
+            </a>
+        </div>
     </div>
 </div>
 
 <!-- 💬 SUPPORT -->
-<div class="card">
-    <h2>💬 پشتیبانی و خرید</h2>
-    <p>برای خرید همه محصولات فقط در روبیکا پیام دهید:</p>
+<div class="section">
+    <div class="card">
+        <h2>💬 پشتیبانی و خرید</h2>
+        <p>برای خرید همه محصولات فقط در روبیکا پیام دهید:</p>
 
-    <h2>Parham_capeer@</h2>
+        <h2>Parham_capeer@</h2>
 
-    <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
-        ورود به روبیکا 🔥
-    </a>
-</div>
-
+        <a class="btn" href="https://rubika.ir/Cape_Minecraft" target="_blank">
+            ورود به روبیکا 🔥
+        </a>
+    </div>
 </div>
 
 <footer>
-© Dragon Shop 2026 | All Rights Reserved
+© Dragon Shop 2026
 </footer>
 
 </body>
