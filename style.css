@@ -27,18 +27,31 @@ header h1{
     padding:20px;
 }
 
-/* SECTION */
-.section{
-    margin:40px 0;
+/* NAV BUTTONS */
+.nav button{
+    background:linear-gradient(90deg,#ff3c00,#00bfff);
+    border:none;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-/* TITLE */
+.nav button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #ff3c00;
+}
+
+/* TITLES */
 h2{
     color:#ff3c00;
     text-shadow:0 0 10px #ff3c00;
 }
 
-/* CARD */
+/* MODAL CARD STYLE */
 .card{
     background: linear-gradient(145deg,#0d1326,#1a0f0f);
     border-radius:15px;
@@ -46,12 +59,6 @@ h2{
     border:1px solid #ff3c00;
     box-shadow:0 0 20px rgba(255,60,0,0.3);
     margin-top:15px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 35px #ff3c00, 0 0 25px #00bfff;
 }
 
 /* IMAGE */
@@ -72,8 +79,8 @@ img{
     color:white;
     text-decoration:none;
     font-weight:bold;
-    box-shadow:0 0 10px rgba(255,60,0,0.5);
     transition:0.3s;
+    box-shadow:0 0 10px rgba(255,60,0,0.5);
 }
 
 .btn:hover{
