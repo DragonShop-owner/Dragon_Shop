@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
@@ -6,81 +7,134 @@
     <title>DragonShop</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+<!-- Loading Screen -->
+
+<div id="loader">
+    <img src="dragon-logo.png" alt="DragonShop">
+    <h2>DragonShop</h2>
+</div>
 
 <div class="container">
 
-    <h1>🐉 DragonShop 🐉</h1>
+```
+<div class="logo">
+    <img src="dragon-logo.png" alt="DragonShop Logo">
+</div>
 
-    <div class="owner">
-        <h2>Owner</h2>
-        <p>Parham_capeer</p>
+<h1>🐉 DragonShop 🐉</h1>
+
+<div class="owner">
+    <h2>👑 Owner</h2>
+    <p>Parham_capeer</p>
+</div>
+
+<!-- Resource Packs -->
+
+<div class="section">
+
+    <h2>🎒 Resource Packs</h2>
+
+    <div class="card">
+        <h3>Reyan Faith</h3>
+
+        <a href="reyan-faith.zip" download class="btn">
+            دانلود رایگان
+        </a>
     </div>
 
-    <div class="country">
-        <h3>Country</h3>
-        <p>Azerbaijan</p>
-    </div>
-
-    <div class="section">
-        <h2>🎒 Resource Packs</h2>
-
-        <div class="card">
-            <h3>reyan-faith.zip</h3>
-            <a href="reyan-faith.zip" download class="btn">
-                دانلود رایگان
-            </a>
-        </div>
-
-        <p class="info">
-            برای خرید ریسورس پک دلخواه به آیدی زیر در روبیکا مراجعه کنید<br>
-            @Parham_capeer
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>🧥 Capes</h2>
-
-        <div class="card">
-            <img src="Cape1.png" alt="Cape">
-            <h3>Cape1.png</h3>
-        </div>
-
-        <p class="info">
-            برای خرید کیپ دلخواه به آیدی زیر در روبیکا مراجعه کنید<br>
-            @Parham_capeer
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>🎨 Art Pixels</h2>
-
-        <div class="card">
-            <img src="Art1.png" alt="Art">
-            <h3>Art1.png</h3>
-        </div>
-
-        <p class="info">
-            برای خرید ارت پیکسل دلخواه به آیدی زیر در روبیکا پیام دهید<br>
-            @Parham_capeer
-        </p>
-    </div>
-
-    <div class="section">
-        <h2>👤 Skins</h2>
-
-        <div class="card">
-            <img src="Skin1.png" alt="Skin">
-            <h3>Skin1.png</h3>
-        </div>
-
-        <p class="info">
-            برای خرید اسکین دلخواه به آیدی زیر در روبیکا مراجعه کنید<br>
-            @Parham_capeer
-        </p>
-    </div>
+    <p class="info">
+        برای خرید ریسورس پک اختصاصی
+        <br>
+        @Parham_capeer
+    </p>
 
 </div>
+
+<!-- Capes -->
+
+<div class="section">
+
+    <h2>🧥 Capes</h2>
+
+    <div class="card">
+        <img src="cape.png" alt="Cape">
+
+        <h3>Custom Cape</h3>
+    </div>
+
+    <p class="info">
+        برای سفارش کیپ اختصاصی
+        <br>
+        @Parham_capeer
+    </p>
+
+</div>
+
+<!-- Art Pixels -->
+
+<div class="section">
+
+    <h2>🎨 Art Pixels</h2>
+
+    <div class="card">
+        <img src="art.png" alt="Art">
+
+        <h3>Art Pixel</h3>
+    </div>
+
+    <p class="info">
+        برای سفارش آرت پیکسل
+        <br>
+        @Parham_capeer
+    </p>
+
+</div>
+
+<!-- Skins -->
+
+<div class="section">
+
+    <h2>👤 Skins</h2>
+
+    <div class="card">
+        <img src="skin.png" alt="Skin">
+
+        <h3>Custom Skin</h3>
+    </div>
+
+    <p class="info">
+        برای سفارش اسکین اختصاصی
+        <br>
+        @Parham_capeer
+    </p>
+
+</div>
+
+<footer>
+    <p>© 2026 DragonShop | Parham_capeer</p>
+</footer>
+```
+
+</div>
+
+<script>
+window.addEventListener("load", function(){
+
+    setTimeout(() => {
+
+        document.getElementById("loader").style.opacity = "0";
+
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+        }, 500);
+
+    }, 2000);
+
+});
+</script>
 
 </body>
 </html>
