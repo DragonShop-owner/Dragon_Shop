@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:tahoma;
+    background:linear-gradient(135deg,#001f4d,#0066ff,#00c3ff);
+    min-height:100vh;
+    color:white;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+}
+
+h1{
+    text-align:center;
+    font-size:60px;
+    margin-bottom:20px;
+    text-shadow:0 0 20px #00e5ff;
+}
+
+.owner,.country{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.owner p,
+.country p{
+    font-size:22px;
+}
+
+.section{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:20px;
+    margin-top:25px;
+    box-shadow:0 0 20px rgba(0,255,255,0.3);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#00ffff;
+}
+
+.card{
+    text-align:center;
+}
+
+.card img{
+    width:250px;
+    max-width:100%;
+    border-radius:15px;
+    border:3px solid #00ffff;
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background:white;
+}
+
+.info{
+    margin-top:15px;
+    text-align:center;
+    color:#d8ffff;
+}
